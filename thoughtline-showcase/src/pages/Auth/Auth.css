@@ -1,0 +1,75 @@
+/* Container centers the login box */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+/* Login box styling */
+.auth-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  width: 350px;
+}
+
+/* Logo styling */
+.auth-logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+/* Headings */
+.auth-box h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Form inputs */
+.auth-box input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Button */
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: #6a11cb;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-box button:hover {
+  background: #6a11cb;
+  color: #fff;
+}
+
+/* Signup link */
+.signup-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-link span {
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
