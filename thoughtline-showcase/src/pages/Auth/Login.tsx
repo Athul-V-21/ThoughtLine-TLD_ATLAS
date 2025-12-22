@@ -39,8 +39,8 @@ const Login = () => {
           />
           <button type="submit">Login</button>
         </form>
-        <p className="signup-link">
-          Don't have an account? <span>Sign Up</span>
+        <p className="signup-link">Don't have an account?{" "}
+        <span onClick={() => navigate("/signup")}>Sign Up</span>
         </p>
       </div>
     </div>
