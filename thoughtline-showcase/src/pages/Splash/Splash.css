@@ -1,16 +1,23 @@
 /* Full-screen container */
+/* Full-screen container */
 .splash-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  /* FULL SCREEN */
   height: 100vh;
-  width:200vh;
-  margin:0;
+  width: 100vw;
+
+  margin: 0;
+  padding: 0;
+
   background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 /* Logo styling */
 .logo h1 {
