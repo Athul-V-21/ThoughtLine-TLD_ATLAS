@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Splash.css"; // import the CSS file
+import "./Splash.css";
 
 const Splash = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigate("/home"); // redirect after 2 seconds
-    }, 2000);
+      navigate("/Login");
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, [navigate]);
