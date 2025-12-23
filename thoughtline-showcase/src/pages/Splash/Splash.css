@@ -1,48 +1,87 @@
-/* Full-screen container */
-/* Full-screen container */
+/* Container */
 .splash-container {
+  height: 100vh;
+  background: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* FULL SCREEN */
-  height: 100vh;
-  width: 100vw;
-
-  margin: 0;
-  padding: 0;
-
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
 }
 
-
-/* Logo styling */
-.logo h1 {
-  font-size: 3rem;
-  letter-spacing: 2px;
+/* ===== CENTER LOGO ===== */
+.center-logo {
+  width: 290px;
   margin-bottom: 30px;
-  animation: fadeIn 1s ease-in-out forwards;
 }
 
-/* Loader animation */
-.loader {
-  width: 50px;
-  height: 50px;
-  border: 5px solid rgba(255, 255, 255, 0.3);
-  border-top: 5px solid #fff;
+.animate-center {
+  animation: fadeScale 2.1s ease forwards;
+}
+
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.companyLogo{
+  align-items:end;
+}
+
+/* ===== ICON-ONLY LOADER ===== */
+.loading-orbit {
+  width: 56px;
+  height: 56px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.loading-orbit span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #dee4df;
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  animation: orbit 1.4s infinite ease-in-out;
 }
 
-/* Animations */
-@keyframes spin {
-  to { transform: rotate(360deg); }
+.loading-orbit span:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+.loading-orbit span:nth-child(2) {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  animation-delay: -0.2s;
+}
+
+.loading-orbit span:nth-child(3) {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: -0.4s;
+}
+
+@keyframes orbit {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.6);
+    opacity: 0.5;
+  }
 }
