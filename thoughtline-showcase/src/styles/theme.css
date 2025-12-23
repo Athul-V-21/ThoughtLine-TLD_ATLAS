@@ -1,0 +1,13 @@
+:root {
+  --bg-black: #0b0b0b;
+  --card-black: #141414;
+  --accent-green: #00ff88;
+  --text-white: #ffffff;
+  --text-muted: #a1a1a1;
+}
+
+body {
+  background-color: var(--bg-black);
+  color: var(--text-white);
+  font-family: "Inter", sans-serif;
+}

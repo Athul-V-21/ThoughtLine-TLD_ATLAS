@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: transparent;
+}
+
+.logo {
+  color: var(--accent-green);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-actions input {
+  background: var(--card-black);
+  border: 1px solid #222;
+  padding: 10px 14px;
+  color: white;
+  border-radius: 8px;
+}

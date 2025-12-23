@@ -1,0 +1,50 @@
+.project-skeleton {
+  background: var(--card-black);
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid #1f1f1f;
+}
+
+.skeleton-badge,
+.skeleton-title,
+.skeleton-line {
+  background: linear-gradient(
+    90deg,
+    #1a1a1a 25%,
+    #2a2a2a 37%,
+    #1a1a1a 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+  border-radius: 6px;
+}
+
+.skeleton-badge {
+  width: 60px;
+  height: 16px;
+  margin-bottom: 14px;
+}
+
+.skeleton-title {
+  width: 70%;
+  height: 18px;
+  margin-bottom: 10px;
+}
+
+.skeleton-line {
+  height: 12px;
+  margin-bottom: 8px;
+}
+
+.skeleton-line.short {
+  width: 50%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
