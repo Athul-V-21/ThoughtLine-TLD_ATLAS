@@ -78,3 +78,21 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+/* 🔴 NEW: Forgot password link */
+.forgot-password {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: right;
+}
+
+.forgot-password span {
+  cursor: pointer;
+  color: #ffffff;
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+.forgot-password span:hover {
+  opacity: 1;
+}
