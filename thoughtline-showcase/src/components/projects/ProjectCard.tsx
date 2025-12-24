@@ -4,7 +4,7 @@ import "./ProjectCard.css";
 interface ProjectProps {
   name: string;
   client: string;
-  status: "Past" | "Current" | "Upcoming";
+  status: "Completed" | "Ongoing" | "Upcoming";
   summary: string;
 }
 

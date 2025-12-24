@@ -3,6 +3,9 @@ import Splash from "../pages/Splash/Splash";
 import Login from "../pages/Auth/Login"; // ✅ Import Login
 import Signup from "../pages/Auth/Signup";
 import Home from "../pages/Home/Home";
+import AddProject from "../components/projects/AddProject";
+
+
 
 
 const AppRoutes = () => {
@@ -12,7 +15,8 @@ const AppRoutes = () => {
         <Route path="/" element={<Splash />} /> {/* Splash route */}
         <Route path="/login" element={<Login />} /> {/* Login route */}
         <Route path="/signup" element={<Signup />} />
-        <Route path="/home" element={<Home/>} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/add-project" element={<AddProject />} />
       </Routes>
     </BrowserRouter>
   );

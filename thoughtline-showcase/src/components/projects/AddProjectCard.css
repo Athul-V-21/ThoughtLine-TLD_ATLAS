@@ -1,0 +1,20 @@
+.add-project-card {
+  height: 200px;
+  border: 2px dashed #558ed3;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.add-project-card:hover {
+  background: #f3f6ff;
+}
+
+.add-icon {
+  font-size: 48px;
+  color: #558ed3;
+}

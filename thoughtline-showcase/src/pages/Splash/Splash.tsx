@@ -26,9 +26,9 @@ const Splash = () => {
 
       {/* Loading button */}
       <div className="loading-orbit">
-      <span></span>
-      <span></span>
-      <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
 
 
@@ -36,8 +36,9 @@ const Splash = () => {
       <img
         src={companyLogo}
         alt="Company Logo Small"
-        className="company-logo-bottom"
+        className="companyLogo"
       />
+
     </div>
   );
 };

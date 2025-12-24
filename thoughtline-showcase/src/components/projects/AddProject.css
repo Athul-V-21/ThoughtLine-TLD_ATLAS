@@ -1,0 +1,129 @@
+.add-project-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #141820, #149680);
+  color: #fff;
+}
+
+.add-project-page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.add-project-form {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.add-project-form input,
+.add-project-form select,
+.add-project-form textarea {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+}
+
+.add-project-form input::placeholder,
+.add-project-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ===== TEAM MEMBERS ===== */
+
+.team-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.team-section label {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.team-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.team-row input {
+  flex: 1;
+}
+
+.remove-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: rgba(255, 0, 0, 0.2);
+  border-color: #ff3c2f;
+}
+
+/* Add member button */
+.add-member-btn {
+  align-self: flex-start;
+  background: transparent;
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-member-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ===== FILE UPLOAD ===== */
+
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.file-upload label {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.file-upload input[type="file"] {
+  padding: 8px;
+  background: transparent;
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+
+.add-project-form button[type="submit"] {
+  margin-top: 10px;
+  background: #e10600;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.add-project-form button[type="submit"]:hover {
+  background: #ff3c2f;
+}

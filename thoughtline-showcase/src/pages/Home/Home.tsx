@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import Navbar from "../../components/layout/Navbar";
 import PageWrapper from "../../components/layout/PageWrapper";
 import ProjectGrid from "../../components/projects/ProjectGrid";
+
 import { fetchProjects } from "../../services/projectService";
 import "./Home.css";
 
-export type ProjectStatus = "Past" | "Current" | "Upcoming";
+export type ProjectStatus = "Completed" | "Ongoing" | "Upcoming";
 
 export interface Project {
   id: number;
@@ -16,6 +19,8 @@ export interface Project {
 }
 
 const Home = () => {
+  const navigate = useNavigate();
+
   const [projects, setProjects] = useState<Project[]>([]);
   const [filtered, setFiltered] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
@@ -66,18 +71,30 @@ const Home = () => {
       <Navbar search={search} onSearchChange={setSearch} />
 
       <div className="home-container">
-        <div className="filter-tabs">
-          {["All", "Current", "Past", "Upcoming"].map((s) => (
-            <button
-              key={s}
-              className={status === s ? "active" : ""}
-              onClick={() => setStatus(s as any)}
-            >
-              {s}
-            </button>
-          ))}
+        {/* TOP BAR */}
+        <div className="home-header">
+          <div className="filter-tabs">
+            {["All", "Ongoing", "Completed", "Upcoming"].map((s) => (
+              <button
+                key={s}
+                className={status === s ? "active" : ""}
+                onClick={() => setStatus(s as any)}
+              >
+                {s}
+              </button>
+            ))}
+          </div>
+
+          {/* ADD PROJECT BUTTON */}
+          <button
+            className="add-project-btn"
+            onClick={() => navigate("/add-project")}
+          >
+            + Add Project
+          </button>
         </div>
 
+        {/* PROJECT GRID */}
         <ProjectGrid projects={filtered} loading={loading} />
       </div>
     </PageWrapper>
